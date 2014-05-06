@@ -17,7 +17,8 @@ $font-bold: "arsenal-bold-webfont", Arial, sans-serif
 $font-bold-italic: "arsenal-bolditalic-webfont", Arial, sans-serif
 $font-sans: "Open Sans", Arial, sans-serif
 
-$blue: #2a3848
+$dark-blue: #2a3848
+$blue: #30aef5
 $gray: #979797
 
 // Common blocks
@@ -119,12 +120,12 @@ body
 		bottom: 0
 		left: 115px
 		right: 115px
-		background: blue
+		background: $blue
 	.logo__meta
 		font-family: $font-bold
 		font-size: 32px
 		line-height: 1
-		color: $blue
+		color: $dark-blue
 		text-align: center
 		text-transform: uppercase
 		text-decoration: none
@@ -222,7 +223,7 @@ body
 			font-size: 21px
 			text-transform: uppercase
 			font-family: $font-base
-			color: #2A3848
+			color: $dark-blue
 			text-decoration: none
 			&:hover
 				@include border-radius(3px)
@@ -232,6 +233,59 @@ body
 // --------------------------------------------------
 .wrap-footer
 	background-image: url("../img/icons/header-bg.png")
+.footer
+	padding: 22px 0 17px
+	.footer-i
+		+clr
+	.footer__addr
+		width: 340px
+		float: left
+	.footer__addr-in
+		margin-bottom: 8px
+		color: #FFF
+	.footer__addr-meta
+		margin-bottom: 5px
+		font-family: $font-bold
+		font-size: 22px
+	.footer__addr-direction
+		font-family: $font-sans
+		font-size: 13px
+	.footer__addr-tel
+		line-height: 1.8
+		a
+			display: block
+			font-size: 21px
+			color: $blue
+			text-decoration: none
+	.footer__addr-passage
+		font-size: 16px
+		color: #FFC835
+		&:hover
+			text-decoration: none
+	.footer__list
+		width: 640px
+		margin-top: 4px
+		float: left
+		+clr
+		ul
+		li
+			margin-bottom: 15px
+		a
+			font-size: 13px
+			font-family: $font-sans 
+			color: #bbc2ca
+			&:hover
+				text-decoration: none
+	.footer__list-item
+		float: left
+	.footer__list-1
+		width: 220px
+		margin-right: 17px
+	.footer__list-2
+		width: 210px
+		margin-right: 17px
+	.footer__list-3
+		width: 176px
 
 .copy
 	font-size: 13px
@@ -240,5 +294,5 @@ body
 	text-align: center
 	.copy-i
 		padding: 16px 0
-		border-top: 1px solid #2b333a
-		box-shadow: 1px 0 0 #161d24
+		border-top: 1px solid #283037
+		box-shadow: 0px -1px 0 #161d24
