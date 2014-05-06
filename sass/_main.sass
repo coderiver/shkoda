@@ -180,3 +180,52 @@
 		line-height: 1.3 
 		color: #FFF
 
+// accordion
+// --------------------------------------------------
+#accordion
+	h3
+		height: 50px
+		margin: 15px 0
+		line-height: 1
+		font-size: 24px
+		text-transform: uppercase
+		color: $dark-blue
+		text-align: center
+		position: relative
+		overflow: hidden
+		cursor: pointer
+		&:after, &:before
+			content: ""
+			width: 1px
+			height: 30px
+			background: #a8a8a8 
+			position: absolute
+			top: -6px
+			bottom: 1px
+		&:after
+			left: 0
+		&:before
+			right: 0
+		.accordion__title-in
+			height: 30px
+			margin-top: 10px
+			display: inline-block
+			position: relative
+			z-index: 9999
+			&:after, &:before
+				content: ""
+				width: 10000px
+				height: 1px
+				background: #a8a8a8 
+				position: absolute
+				bottom: 16px
+				z-index: 100
+			&:after
+				right: 100%
+				margin-right: 12px
+			&:before
+				left: 100%
+				margin-left: 12px
+	.ui-accordion-header-active
+
+

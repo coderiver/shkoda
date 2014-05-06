@@ -179,3 +179,12 @@ body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont"
 .banner .banner__media { width: 298px; height: 318px; line-height: 318px; overflow: hidden; text-align: center; }
 .banner .banner__media img { width: 100%; }
 .banner .banner__descr { padding: 14px 28px 13px; position: absolute; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); font-size: 18px; line-height: 1.3; color: white; }
+
+#accordion h3 { height: 50px; margin: 15px 0; line-height: 1; font-size: 24px; text-transform: uppercase; color: #2a3848; text-align: center; position: relative; overflow: hidden; cursor: pointer; }
+#accordion h3:after, #accordion h3:before { content: ""; width: 1px; height: 30px; background: #a8a8a8; position: absolute; top: -6px; bottom: 1px; }
+#accordion h3:after { left: 0; }
+#accordion h3:before { right: 0; }
+#accordion h3 .accordion__title-in { height: 30px; margin-top: 10px; display: inline-block; position: relative; z-index: 9999; }
+#accordion h3 .accordion__title-in:after, #accordion h3 .accordion__title-in:before { content: ""; width: 10000px; height: 1px; background: #a8a8a8; position: absolute; bottom: 16px; z-index: 100; }
+#accordion h3 .accordion__title-in:after { right: 100%; margin-right: 12px; }
+#accordion h3 .accordion__title-in:before { left: 100%; margin-left: 12px; }
