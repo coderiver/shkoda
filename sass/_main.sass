@@ -1,2 +1,182 @@
-// Normally mainpage styles
- 
+// 
+// --------------------------------------------------
+
+// Slider
+// --------------------------------------------------
+.slider
+	margin-bottom: 35px
+	position: relative
+	.slider__item-media
+		width: 980px
+		height: 350px
+		line-height: 350px
+		text-align: center
+		background: red 
+		img
+			height: 100%
+			text-align: center
+			display: inline-block
+	.slider__item-descr
+		position: absolute
+		top: 57px
+		left: 35px
+		line-height: 1.3
+	.slider__item-meta
+		font-size: 24px
+		color: #FFF 
+	.slider__item-name
+		margin-top: 13px
+		font-size: 56px
+		text-transform: uppercase 
+		color: $blue
+	.slider__pager
+		position: absolute
+		bottom: 10px
+		right: 10px
+		z-index: 100
+		span
+			width: 10px
+			height: 10px
+			margin: 0 3px
+			background: #fff
+			+border-radius(50%)
+			display: inline-block
+			font-size: 0
+			cursor: pointer
+
+// service
+// --------------------------------------------------
+.service
+	padding: 45px 0 60px
+	background-image: url("../img/icons/header-bg.png")
+	position: relative
+	.service__title
+		margin-bottom: 15px
+		line-height: 1
+		font-weight: 400
+		font-size: 26px
+		text-transform: uppercase
+		color: $blue
+	.service__title-small
+		margin-bottom: 20px
+		line-height: 1
+		font-size: 21px
+		font-weight: 400
+		color: #FFF
+	.service__content
+		line-height: 1.3
+		color: #fff
+		font-family: $font-sans 
+		p
+			margin-bottom: 15px
+	.service__btn
+		width: 212px
+		position: absolute
+		left: 50%
+		margin-left: -161px
+		bottom: -30px
+
+// widget
+// --------------------------------------------------
+.widget
+	padding-top: 82px
+	.widget-i
+		+clr
+	.widget__in
+		overflow: hidden
+	.widget__item
+		width: 300px
+		margin-left: 40px
+		float: left
+		&:first-child
+			margin-left: 0
+	.h2
+		margin-bottom: 36px
+		position: relative
+		&:after
+			content: ""
+			width: 60px
+			height: 1px
+			background: #b0b0b0
+			position: absolute
+			bottom: -15px
+			left: 0
+
+// news-preview
+// --------------------------------------------------
+.news-preview
+	font-family: $font-sans
+	li
+		margin-bottom: 17px
+		padding-bottom: 22px
+		border-bottom: 1px dashed #a5a5a5 
+	.news-preview__cont
+		margin-bottom: 11px
+		line-height: 1.2
+	.news-preview__all
+		color: #616161
+		&:hover
+			text-decoration: none
+
+// partners
+// --------------------------------------------------
+.partners
+	margin-left: -10px
+	+clr
+	.widget__item &
+		margin-top: 42px
+	li
+		width: 143px
+		height: 78px
+		margin-bottom: 10px
+		margin-left: 10px
+		border: 1px solid #a8a8a8
+		float: left
+		overflow: hidden
+	.partners__item
+		width: 143px
+		height: 78px
+		line-height: 78px
+		background: #FFF
+		text-align: center
+		img
+			max-width: 100%
+			vertical-align: middle
+
+// banner
+// --------------------------------------------------
+.banner
+	width: 298px
+	height: 318px
+	border: 1px solid #bdc0c2
+	position: relative
+	.widget__item &
+		margin-top: 8px
+	.banner__title
+		width: 100%
+		position: absolute
+		top: 26px
+		text-align: center
+		font-family: $font-bold 
+		font-size: 30px
+		text-transform: uppercase
+		color: #30AEF5
+	.banner__media
+		width: 298px
+		height: 318px
+		line-height: 318px
+		overflow: hidden
+		text-align: center
+		img
+			width: 100%
+	.banner__descr
+		padding: 14px 28px 13px
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(0,0,0, .8)
+		font-size: 18px
+		line-height: 1.3 
+		color: #FFF
+

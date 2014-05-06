@@ -1,5 +1,9 @@
 head.ready(document, function () {
 	// console.log($('body').html());
+	
+	$(function() {
+    $( "#accordion" ).accordion();
+  });
 
 	$(function() {
 	    var footerHeight = $(".wrap-footer").height();
@@ -12,4 +16,6 @@ head.ready(document, function () {
 	    $(".out").css("margin-bottom", -footerHeight);
 	    $(".push").css("height", footerHeight);
 	});
+
+
 });

@@ -11,6 +11,7 @@
 
 <!-- BEGIN  out-->
 <div class="out">
+
 	<!-- BEGIN header -->
 	<div class="header">
 		<div class="header-i wrap">
@@ -42,6 +43,7 @@
 		</div>
 	</div>
 	<!-- / .header -->
+
 	<!-- BEGIN nav -->
 	<div class="nav wrap">
 		<div class="nav-i">
@@ -58,8 +60,16 @@
 				<li>
 					<div><a href="#">Прайс лист</a></div>
 				</li>
-				<li>
+				<li class="has-dropnaw">
 					<div><a href="#">Запчасти</a></div>
+					<ul class="sub-nav">
+						<li><a href="#">Оригинальные каталоги</a></li>
+						<li><a href="#">Каталоги заменителей</a></li>
+						<li><a href="#">Принадлежности</a></li>
+						<li><a href="#">Общий каталог</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Мотокаталоги</a></li>
+					</ul>
 				</li>
 				<li>
 					<div><a href="#">Галерея</a></div>
@@ -71,13 +81,154 @@
 		</div>
 	</div>
 	<!-- / .nav -->
+
 	<!-- BEGIN page -->
 	<div class="page" style='height: 2193px;'>
 		<div class="page-i wrap">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ratione, error, quaerat dolore totam officia architecto doloribus beatae deleniti sed nam quia dolor ipsam eius atque vel consequatur iusto placeat?
+
+			<!-- BEGIN slider -->
+			<div class="slider">
+				<div class="cycle-slideshow"
+				data-cycle-fx="scrollHorz"
+				data-cycle-timeout="6000"
+				data-cycle-slides="> .slider__item"
+				data-cycle-pager=".slider__pager"
+				data-pause-on-hover="true"
+				>
+					<div class="slider__item">
+						<a href="#">
+							<div class="slider__item-media"><img src="img/slider2.jpg" alt=""></div>
+							<div class="slider__item-descr">
+								<div class="slider__item-meta">
+									<p>Техническое обслуживание <br>и ремонт 2</p>
+									<div class="slider__item-name">Skoda 2</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="slider__item">
+						<a href="#">
+							<div class="slider__item-media"><img src="img/slider1.jpg" alt=""></div>
+							<div class="slider__item-descr">
+								<div class="slider__item-meta">
+									<p>Техническое обслуживание <br>и ремонт </p>
+									<div class="slider__item-name">Skoda</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="slider__pager"></div>
+			</div>
+			<!-- / .slider -->
+
+			<!-- BEGIN tabs -->
+			<div class="tabs" style='height: 813px;'>
+				<div id="accordion">
+					<h3>First</h3>
+					<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+					<h3>Second</h3>
+					<div>Phasellus mattis tincidunt nibh.</div>
+					<h3>Third</h3>
+					<div>Nam dui erat, auctor a, dignissim quis.</div>
+				</div>
+			</div>
+			<!-- / .tabs -->
 		</div>
+
+		<!-- BEGIN service -->
+		<div class="service">
+			<div class="service-i wrap">
+				<h2 class="service__title">Кузовной ремонт Шкода</h2>
+				<div class="service__content">
+					<p>Кузовной ремонт Шкода - это широкий спектр услуг, который включает в себя восстановление геометрии кузова, устранение царапин, замену отдельных элементов и прочее. Кузовной ремонт Шкода, как и любой другой иномарки, представляет собой высокоточную задачу, справиться с которой можно только при наличии большого опыта и современного оснащения.</p>
+					<p>Известно, что подгонка элементов кузова автомобилей осуществляется непосредственно на заводе, поэтому новые автомобили отличаются великолепной аэродинамикой, что, в свою очередь, способствует оптимальному расходу топлива, курсовой устойчивости и плавному передвижению автомобиля. Причины, которые могут вызвать восстановление геометрии Шкода или комплексный ремонт кузова, разнообразны. Во-первых, кузовной ремонт Шкода может понадобиться владельцам транспортным средств, которые попали в ДТП. Смятые элементы кузова не только портят внешний вид, но и сказываются на технических характеристиках автомобиля. Во-вторых, кузовной ремонт Skoda может понадобиться потребителю, который решился на покупку подержанного авто. В частности, перед покупкой подержанного автомобиля рекомендуется обратиться в профессиональный сервис Шкода, в котором специалисты проведут комплексную диагностику всех </p>
+				</div>
+				<h3 class="service__title-small">Ремонт ходовой части Skoda</h3>
+				<div class="service__content">
+					<p>Во избежание серьезных поломок специалисты сети техцентров Автосервис "Шкода Отрадное" рекомендует систематически проводить диагностику всех узлов машины, в противном случае вы можете столкнуться с необходимостью проведения капитальных восстановительных работ. Ниже рассмотрим основные проблемы, связанные с ходовой частью чешского автомобиля.</p>
+				</div>
+				<a href="#" class="service__btn btn-orange">Запись на сервис</a>
+			</div>
+		</div>
+		<!-- / .service -->
+
+		<!-- BEGIN widget -->
+		<div class="widget">
+			<div class="widget-i wrap">
+				<div class="widget__in">
+					<div class="widget__item">
+						<h2 class="h2">НОвости</h2>
+						<div class="news-preview">
+							<ul>
+								<li>
+									<div class="news-preview__cont">
+										<p>Во избежание серьезных поломок специалисты сети техцентров Автосервис "Шкода Отрадное" рекомендует</p>
+									</div>
+									<a href="#" class="more more_gray">подробнее</a>
+								</li>
+								<li>
+									<div class="news-preview__cont">
+										<p>Во избежание серьезных поломок специалисты сети техцентров Автосервис "Шкода Отрадное" рекомендует</p>
+									</div>
+									<a href="#" class="more more_blue">подробнее</a>
+								</li>		
+							</ul>
+							<a href="#" class="news-preview__all">Все новости</a>
+						</div>
+					</div>
+					<div class="widget__item">
+						<h2 class="h2">Наши партнеры:</h2>
+						<ul class="partners">
+							<li>
+								<div class="partners__item">
+									<a href="#"><img src="img/icons/part11.png" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="partners__item">
+									<a href="#"><img src="img/icons/part12.png" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="partners__item">
+									<a href="#"><img src="img/icons/part21.png" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="partners__item">
+									<a href="#"><img src="img/icons/part22.png" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="partners__item">
+									<a href="#"><img src="img/icons/part31.png" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="partners__item">
+									<a href="#"><img src="img/icons/part32.png" alt=""></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="widget__item">
+						<div class="banner">
+							<h3 class="banner__title">Диски Brembo</h3>
+							<div class="banner__media"><img src="img/icons/disk1.png" alt=""></div>
+							<div class="banner__descr">
+								<p>От гоночного спорта к поставкам тормозных дисков и барабанов Brembo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- / .widget -->
+
 	</div>
 	<!-- / .page -->
+
 	<div class="push"></div>
 </div>
 <!-- END out-->
