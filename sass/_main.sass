@@ -4,7 +4,7 @@
 // Slider
 // --------------------------------------------------
 .slider
-	margin-bottom: 35px
+	margin-bottom: 23px
 	position: relative
 	.slider__item-media
 		width: 980px
@@ -43,6 +43,10 @@
 			display: inline-block
 			font-size: 0
 			cursor: pointer
+			+transition(all linear 0.2s)
+			&:hover
+				+opacity(0.6)
+				+transition(all linear 0.2s)
 
 // service
 // --------------------------------------------------
@@ -182,18 +186,22 @@
 
 // accordion
 // --------------------------------------------------
-#accordion
-	h3
+.accordion
+	margin: 0 -10px
+	.accordion__title
 		height: 50px
-		margin: 15px 0
 		line-height: 1
 		font-size: 24px
 		text-transform: uppercase
 		color: $dark-blue
+		font-weight: 400 
 		text-align: center
 		position: relative
 		overflow: hidden
 		cursor: pointer
+		margin-top: 9px
+		// &.accordion__title-last
+		// 	margin-top: 0
 		&:after, &:before
 			content: ""
 			width: 1px
@@ -211,7 +219,7 @@
 			margin-top: 10px
 			display: inline-block
 			position: relative
-			z-index: 9999
+			z-index: 999
 			&:after, &:before
 				content: ""
 				width: 10000px
@@ -226,6 +234,173 @@
 			&:before
 				left: 100%
 				margin-left: 12px
+	.accordion__content
+		border-left: 1px solid #a8a8a8
+		border-right: 1px solid #a8a8a8
+		border-bottom: 1px solid #a8a8a8
+		padding: 0 0px 30px
 	.ui-accordion-header-active
+		margin-top: 0
+		&:before, &:after
+			height: 37px
+			top: 24px
+			background: #a8a8a8
 
+// Product
+// --------------------------------------------------
+.product
+	padding: 33px 9px 0
+	ul
+		margin-left: -13px
+		+clr
+	li
+		width: 152px
+		margin-left: 13px
+		margin-bottom: 20px
+		float: left
+		text-align: center
+	.product__media
+		width: 152px
+		height: 90px
+		line-height: 90px
+		img
+			max-width: 100% 
+	.product__name
+		margin-bottom: 7px
+		font-size: 18px
+		color: #151B21
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		a
+			color: #151B21
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.product__year
+		height: 24px
+		line-height: 24px
+		padding: 0 6px
+		+border-radius(2px)
+		display: inline-block
+		background: #D1D1D1
+		font-size: 16px
+		color: #151B21
+		text-decoration: none
+		&:hover
+			background: #FFC835
+		a
+			font-size: 16px
+			color: #151B21
+			text-decoration: none
 
+// popup
+// --------------------------------------------------
+.overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(#000, .6)
+	z-index: -1
+	opacity: 0
+	+transition(all .3s linear)
+	&.is-active
+		opacity: 1
+		z-index: 5000
+
+.popup
+	position: absolute
+	top: 100px
+	left: 50%
+	margin-left: -175px
+	+opacity(0)
+	+transition(all .3s linear)
+	&.is-active
+		+opacity(1)
+		z-index: 5000
+	.popup__bg
+		content: ""
+		height: 178px
+		padding: 3px 0
+		border-top: 1px solid red 
+		border-bottom: 1px solid red
+		position: absolute
+		left: -9900px
+		right: -9900px
+		background: #fff
+		z-index: 1000
+		top: 82px
+	.popup-i
+		width: 212px
+		height: 212px
+		padding: 68px
+		border: 1px solid #b1bfce
+		background: #fff
+		+border-radius(50%)
+		+box-shadow(0 0 0 3px #fff)
+		position: relative
+		z-index: 2000
+		text-align: center
+		&:after
+			content: ""
+			+s(popup-elips)
+			position: absolute
+			top: 35px
+			left: 50%
+			margin-left: -59px
+	.popup__close
+		position: absolute
+		top: 0px
+		right: 0px
+		+s(i-close)
+		cursor: pointer
+	.popup__title
+		margin-bottom: 20px
+		font-family: $font-bold 
+		font-size: 24px
+		text-transform: uppercase
+		color: #1B232B
+	.popup__row
+		margin-bottom: 18px
+	.popup__send
+		margin-top: 36px
+		display: block
+		text-align: center
+		+s(sexy-btn)
+		line-height: 48px
+		color: #333
+		font-family: $font-bold
+		font-size: 20px
+		text-transform: uppercase
+		text-decoration: none
+		&:hover
+			+sp(sexy-btn_h)
+		&:active
+			+sp(sexy-btn_a)
+
+// Input
+// --------------------------------------------------
+.input
+	width: 170px
+	padding: 8px 20px
+	border: 1px solid #d1d1d1
+	+border-radius(4px)
+	font-size: 18px
+	color: #2B2B2B
+	+placeholder
+		font-size: 18px
+		color: #2B2B2B
+	&:hover
+		background: #E0E6EC
+		border-color: #adb0b5
+		color: #7C7C7C
+		+placeholder
+			color: #7c7c7c
+	&:focus
+		background: #F3F5F6
+		border-color: #288dca
+		color: #2B2B2B
+		+placeholder
+			color: #2B2B2B
