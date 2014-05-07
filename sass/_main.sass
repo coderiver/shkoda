@@ -84,6 +84,7 @@
 // --------------------------------------------------
 .widget
 	padding-top: 82px
+	margin-bottom: 80px
 	.widget-i
 		+clr
 	.widget__in
@@ -187,7 +188,7 @@
 // accordion
 // --------------------------------------------------
 .accordion
-	margin: 0 -10px
+	margin: 0 -10px 70px
 	.accordion__title
 		height: 50px
 		line-height: 1
@@ -404,3 +405,173 @@
 		color: #2B2B2B
 		+placeholder
 			color: #2B2B2B
+
+// car-service
+// --------------------------------------------------
+.car-service
+	margin: 65px 0 60px
+	position: relative
+	ul
+		+clr
+	li
+		width: 230px
+		margin-bottom: 35px
+		display: inline-block
+		text-align: center
+		.car-service__item-ico
+			display: inline-block
+			vertical-align: middle
+	.car-service__meta
+		width: 100%
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		color: #2A3848 
+		position: absolute
+		top: -15px
+		overflow: hidden
+		span
+			position: relative
+			&:after, &:before
+				content: ""
+				width: 1000px
+				height: 1px
+				background: #a8a8a8 
+				position: absolute
+				top: 14px
+			&:after
+				left: 100%
+				margin-left: 15px
+			&:before
+				right: 100%
+				margin-right: 15px
+	.car-service__in
+		padding: 55px 9px
+		border: 1px solid #a8a8a8
+		border-top-width: 0
+	.car-service__item
+		width: 100px
+		height: 100px
+		line-height: 100px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 10px
+		text-align: center
+		+border-radius(50%)
+		border: 2px solid $blue
+		&:hover
+			background-color: #ffc22f
+			border-color: transparent
+		img
+			vertical-align: middle
+	.car-service__title
+		padding: 0 5px
+		display: inline-block
+		+border-radius(3px)
+		font-size: 18px
+		color: $dark-blue
+		text-decoration: none
+		&:hover
+			background: #DDD
+	.car-service__1
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv11_h)
+		.car-service__item-ico
+			+s(serv11)
+	.car-service__2
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv12_h)
+		.car-service__item-ico
+			+s(serv12)
+	.car-service__3
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv13_h)
+		.car-service__item-ico
+			+s(serv13)
+	.car-service__4
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv14_h)
+		.car-service__item-ico
+			+s(serv14)
+			margin-left: -4px
+			margin-top: -4px
+	.car-service__5
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv21_h)
+		.car-service__item-ico
+			+s(serv21)
+	.car-service__6
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv22_h)
+		.car-service__item-ico
+			+s(serv22)
+	.car-service__7
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv23_h)
+		.car-service__item-ico
+			+s(serv23)
+	.car-service__8
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv24_h)
+		.car-service__item-ico
+			+s(serv24)
+			margin-left: 4px
+	.car-service__9
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv31_h)
+		.car-service__item-ico
+			+s(serv31)
+	.car-service__10
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv32_h)
+		.car-service__item-ico
+			+s(serv32)
+	.car-service__11
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv33_h)
+		.car-service__item-ico
+			+s(serv33)
+			margin-bottom: 1px
+	.car-service__12
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv34_h)
+		.car-service__item-ico
+			+s(serv34)
+	.car-service__13
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv41_h)
+		.car-service__item-ico
+			+s(serv41)
+	.car-service__14
+		.car-service__item
+			&:hover
+				.car-service__item-ico
+					+sp(serv42_h)
+		.car-service__item-ico
+			+s(serv42)
