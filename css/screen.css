@@ -303,7 +303,7 @@ body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont"
 .car-service .car-service__14 .car-service__item:hover .car-service__item-ico { background-position: 0 -3575px; }
 .car-service .car-service__14 .car-service__item-ico { background: url('../img/icons-s189d174ac9.png') 0 -3231px no-repeat; width: 67px; height: 67px; }
 
-.article { margin-bottom: 200px; margin-top: 50px; }
+.article { margin-bottom: 50px; margin-top: 50px; }
 .article p { margin-bottom: 25px; }
 .article .article__item { *zoom: 1; }
 .article .article__item:after { content: " "; display: table; clear: both; }
