@@ -1,6 +1,12 @@
 // 
 // --------------------------------------------------
 
+// misc
+// --------------------------------------------------
+.gray
+	color: #6F808E 
+.blue
+	color: $blue 
 // Slider
 // --------------------------------------------------
 .slider
@@ -79,6 +85,10 @@
 		left: 50%
 		margin-left: -161px
 		bottom: -30px
+	.service__tel
+		margin-bottom: 15px
+		font-size: 24px
+		color: #FFC936
 
 // widget
 // --------------------------------------------------
@@ -575,3 +585,174 @@
 					+sp(serv42_h)
 		.car-service__item-ico
 			+s(serv42)
+
+// article
+// --------------------------------------------------
+.article
+	margin-bottom: 200px
+	margin-top: 50px
+	p
+		margin-bottom: 25px
+	.article__item
+		+clr
+	.article__content
+		width: 460px
+		padding-right: 20px
+		margin-right: 20px
+		float: left
+	.article__media
+		max-width: 480px
+		overflow: hidden
+		img
+			max-width: 480px
+	.h2
+		font-size: 21px
+		color: #3B699E
+	.h3
+		font-size: 21px
+		color: #3B699E
+	.h4
+		margin-bottom: 25px
+		font-size: 14px
+		text-transform: uppercase
+		color: #2A3848 
+
+// list list-num
+// --------------------------------------------------
+.list
+	li
+		margin-bottom: 25px
+		&:before
+			content: ""
+			width: 10px
+			height: 10px
+			margin-right: 10px
+			border: 1px solid $blue
+			+border-radius(50%)
+			display: inline-block
+			vertical-align: middle
+
+.list-num
+	margin-left: 10px
+	list-style: none
+	counter-reset: point
+	li
+		margin-bottom: 25px
+		display: block
+		position: relative
+		&:before
+			content: counter(point) ". "
+			counter-increment: point 1
+			color: $blue
+
+// table
+// --------------------------------------------------
+.table
+	margin-bottom: 45px
+	thead
+		border: 1px solid $blue
+		tr
+			td
+				border-left: 1px solid #fff
+				&:first-child
+					border-color: $blue 
+	tbody
+		border: 1px solid $blue
+		// border-top-width: 0 
+		tr
+			background: #FFF
+			&:nth-child(2n)
+				background: #e4eaed 
+			td
+				&:first-child
+					border-color: $blue
+					.table__label
+						border-color: transparent 
+	.table__title
+		padding-left: 20px
+		height: 40px
+		line-height: 40px
+		background: $blue
+		font-size: 18px
+		text-transform: uppercase
+		color: #FFF
+	.table__label
+		height: 40px
+		line-height: 40px
+		padding-left: 20px
+		border-left: 1px solid #fff
+		color: #3F3F3F 
+		font-family: $font-sans
+
+// form
+// --------------------------------------------------
+.form
+	width: 320px
+	margin-top: 70px
+	margin-left: auto
+	margin-right: auto
+	.form__row
+		margin-bottom: 12px
+	.form__input
+		width: 280px
+		padding: 2px 20px 
+		height: 30px
+		@include border-radius(3px)
+		background-color: #fff
+		@include box-shadow(inset 2px 2px 0 #d8d8d8)
+		font-size: 18px
+		color: #2B2B2B
+		border: 1px solid transparent
+		+placeholder
+			font-size: 18px
+			color: #2B2B2B
+		&:focus
+			border-color: #288dca
+			color: #2B2B2B
+			border-color: #288dca
+			+placeholder
+				color: #2B2B2B
+	.form__select
+		width: 320px
+		padding: 2px 20px 
+		height: 36px
+		@include border-radius(3px)
+		background-color: #fff
+		@include box-shadow(inset 2px 2px 0 #d8d8d8)
+		font-size: 18px
+		color: #2B2B2B
+
+// gallery
+// --------------------------------------------------
+.gallery
+	margin-top: 50px
+	margin-bottom: 80px
+	.gallery__title
+		margin-bottom: 30px
+		padding-bottom: 25px
+		position: relative
+		&:after
+			content: ""
+			width: 60px
+			height: 1px
+			background: #b0b0b0
+			position: absolute
+			bottom: 0px
+			left: 0
+	.gallery__in
+		+clr
+	.gallery__item
+		width: 225px
+		height: 134px
+		line-height: 134px
+		overflow: hidden
+		margin-left: 16px
+		background: red
+		border: 1px solid #dfdfdf
+		+box-shadow(0 0 0 2px #b1b1b1)
+		float: left
+		&:first-child
+			margin-left: 0
+		img
+			display: inline-block
+			vertical-align: middle
