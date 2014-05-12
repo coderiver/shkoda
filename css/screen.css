@@ -30,11 +30,11 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 html, body { height: 100%; }
 
-body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont", Arial, sans-serif; line-height: 1.4; background-image: url("../img/icons/bg.png"); }
+body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont", Arial, sans-serif; line-height: 1.4; background-image: url("../img/icons/bg.png"); position: relative; }
 
 .wrap { width: 980px; margin-left: auto; margin-right: auto; }
 
-.out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto; position: relative; overflow: hidden; }
+.out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto; overflow: hidden; }
 
 .h1 { margin-bottom: 25px; font-size: 24px; text-transform: uppercase; color: #2a3848; }
 
@@ -198,8 +198,10 @@ body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont"
 .banner .banner__descr { padding: 14px 28px 13px; position: absolute; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); font-size: 18px; line-height: 1.3; color: white; }
 
 .accordion { margin: 0 -10px 70px; }
+.accordion .accordion__item-1 .accordion__title:after, .accordion .accordion__item-1 .accordion__title:before { height: 37px; top: 24px; background: #a8a8a8; }
 .accordion .accordion__title { height: 50px; line-height: 1; font-size: 24px; text-transform: uppercase; color: #2a3848; font-weight: 400; text-align: center; position: relative; overflow: hidden; cursor: pointer; margin-top: 9px; }
 .accordion .accordion__title:after, .accordion .accordion__title:before { content: ""; width: 1px; height: 30px; background: #a8a8a8; position: absolute; top: -6px; bottom: 1px; }
+.accordion .accordion__title.is-open:before, .accordion .accordion__title.is-open:after { height: 37px; top: 24px; background: #a8a8a8; }
 .accordion .accordion__title:after { left: 0; }
 .accordion .accordion__title:before { right: 0; }
 .accordion .accordion__title .accordion__title-in { height: 30px; margin-top: 10px; display: inline-block; position: relative; z-index: 999; }
@@ -207,13 +209,14 @@ body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont"
 .accordion .accordion__title .accordion__title-in:after { right: 100%; margin-right: 12px; }
 .accordion .accordion__title .accordion__title-in:before { left: 100%; margin-left: 12px; }
 .accordion .accordion__content { border-left: 1px solid #a8a8a8; border-right: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; padding: 0 0px 30px; }
-.accordion .ui-accordion-header-active { margin-top: 0; }
-.accordion .ui-accordion-header-active:before, .accordion .ui-accordion-header-active:after { height: 37px; top: 24px; background: #a8a8a8; }
 
 .product { padding: 33px 9px 0; }
 .product ul { margin-left: -13px; *zoom: 1; }
 .product ul:after { content: " "; display: table; clear: both; }
 .product li { width: 152px; margin-left: 13px; margin-bottom: 20px; float: left; text-align: center; }
+.product li a { text-decoration: none; }
+.product li a:hover .product__name { text-decoration: underline; }
+.product li a:hover .product__year { background: #ffc835; }
 .product .product__media { width: 152px; height: 90px; line-height: 90px; }
 .product .product__media img { max-width: 100%; }
 .product .product__name { margin-bottom: 7px; font-size: 18px; color: #151b21; text-decoration: none; }
@@ -221,7 +224,6 @@ body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont"
 .product .product__name a { color: #151b21; text-decoration: none; }
 .product .product__name a:hover { text-decoration: underline; }
 .product .product__year { height: 24px; line-height: 24px; padding: 0 6px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; display: inline-block; background: #d1d1d1; font-size: 16px; color: #151b21; text-decoration: none; }
-.product .product__year:hover { background: #ffc835; }
 .product .product__year a { font-size: 16px; color: #151b21; text-decoration: none; }
 
 .overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: -1; opacity: 0; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; }
@@ -333,7 +335,9 @@ body { min-width: 980px; font-size: 14px; font-family: "arsenal-regular-webfont"
 .table .table__title { padding-left: 20px; height: 40px; line-height: 40px; background: #30aef5; font-size: 18px; text-transform: uppercase; color: white; }
 .table .table__label { height: 40px; line-height: 40px; padding-left: 20px; border-left: 1px solid white; color: #3f3f3f; font-family: "Open Sans", Arial, sans-serif; }
 
-.form { width: 320px; margin-top: 70px; margin-left: auto; margin-right: auto; }
+.form-wrap { margin-top: 70px; }
+
+.form { width: 320px; margin-left: auto; margin-right: auto; }
 .form .form__row { margin-bottom: 12px; }
 .form .form__input { width: 280px; padding: 2px 20px; height: 30px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: white; -webkit-box-shadow: inset 2px 2px 0 #d8d8d8; -moz-box-shadow: inset 2px 2px 0 #d8d8d8; box-shadow: inset 2px 2px 0 #d8d8d8; font-size: 18px; color: #2b2b2b; border: 1px solid transparent; }
 .form .form__input:-ms-input-placeholder { font-size: 18px; color: #2b2b2b; }
