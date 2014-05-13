@@ -56,4 +56,11 @@ head.ready(document, function () {
 	  $(".js-form").slideDown('fast');
 	  return false;
 	 });
+
+	 // fancybox
+	$(".fancybox").fancybox({
+		helpers:  {
+			overlay : false
+		}
+	});
 });
